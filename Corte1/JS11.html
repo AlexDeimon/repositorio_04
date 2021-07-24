@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function control(){
+			if(document.getElementById('carta').value.length>200){
+				alert('la carta es muy grande');
+			}else{
+				alert('datos correctos');
+			}
+		}
+	</script>
+	<form>
+		<textarea id="carta" rows="10" cols="40"></textarea><br>
+		<input type="button" value="verificar" onclick="control()">
+	</form>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function abrir() {
+			var ventana=open();
+			ventana.document.write("Estoy colocando texto en la nueva ventana");
+			ventana.document.write("Esta es la segunda linea de texto");
+		}
+		function abrirparametros() {
+			var ventana=open('','','status=yes,width=400, height=250, menubar=yes');
+			ventana.document.write("texto de la pagina...");
+		}
+		function mostraralerta() {
+			alert("Este evento ya lo vimos en programas anteriores");
+		}
+		function confirmar() {
+			var respuesta=confirm("Presione uno de los botones...");
+			if(respuesta==true)
+				alert("Presione aceptar...");
+			else
+				alert("Presione cancelar...");
+		}
+		function cargarcadena() {
+			var cadena=prompt("Escriba una frase:","");
+			alert("Usted escribió: "+cadena);
+		}
+	</script>
+	<form>
+		<input type="button" value="open()" onclick="abrir()"><br>
+		<input type="button" value="open con parametros()" onclick="abrirparametros()"><br>
+		<input type="button" value="alert" onclick="mostraralerta()"><br>
+		<input type="button" value="confirm" onclick="confirmar()"><br>
+		<input type="button" value="prompt" onclick="cargarcadena()">
+	</form>
+</body>
+</html>

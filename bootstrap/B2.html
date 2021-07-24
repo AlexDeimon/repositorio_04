@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootsrap</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+<body style="background-image: linear-gradient(125deg,  #ffff00 40%, #ff0000 80% );">
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="nombre">Ingrese su nombre</label>
+				<input type="text" name="nombre" id="nombre" class="form-control form-control-sm">
+			</div>
+			<div class="form-group">
+				<label for="clave">Ingrese su clave</label>
+				<input type="password" name="clave" id="clave" class="form-control">
+			</div>
+			<div class="form-group">
+				<label for="comentarios">Comentarios</label>
+				<textarea class="form-control" rows="5" id="comentarios" name="comentarios"></textarea>
+			</div>
+			<button type="submit" class="btn btn-default">Enviar</button>
+		</form>
+	</div>
+	<hr>
+	<div class="container">
+		<h1>Distintas Filas</h1>
+		<form>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="checkbox1">
+				<label class="form-check-label" for="checkbox1">Opcion 1</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="checkbox2">
+				<label class="form-check-label" for="checkbox2">Opcion 2</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" name="checkbox3">
+				<label class="form-check-label" for="checkbox3">Opcion 3</label>
+			</div>
+			<br>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="radio1" name="grupo1">
+				<label class="form-check-label" for="radio1">Opcion 1</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="radio2" name="grupo1">
+				<label class="form-check-label" for="radio2">Opcion 2</label>
+			</div>
+			<div class="form-check">
+				<input class="form-check-input" type="radio" id="radio3" name="grupo1">
+				<label class="form-check-label" for="radio3">Opcion 3</label>
+			</div>
+			<button type="submit" class="btn btn-info">Enviar</button>
+		</form>
+	</div>
+	<hr>
+	<div class="container">
+		<h1>En la misma Fila</h1>
+		<form>
+			<div class="form-check-inline">
+				<input class="form-check-input" type="checkbox" name="checkbox1">
+				<label class="form-check-label" for="checkbox1">Opcion 1</label>
+			</div>
+			<div class="form-check-inline">
+				<input class="form-check-input" type="checkbox" name="checkbox2">
+				<label class="form-check-label" for="checkbox2">Opcion 2</label>
+			</div>
+			<div class="form-check-inline">
+				<input class="form-check-input" type="checkbox" name="checkbox3">
+				<label class="form-check-label" for="checkbox3">Opcion 3</label>
+			</div>
+			<br>
+			<div class="form-check-inline">
+				<input class="form-check-input" type="radio" id="radio1" name="grupo1">
+				<label class="form-check-label" for="radio1">Opcion 1</label>
+			</div>
+			<div class="form-check-inline">
+				<input class="form-check-input" type="radio" id="radio2" name="grupo1">
+				<label class="form-check-label" for="radio2">Opcion 2</label>
+			</div>
+			<div class="form-check-inline">
+				<input class="form-check-input" type="radio" id="radio3" name="grupo1">
+				<label class="form-check-label" for="radio3">Opcion 3</label>
+			</div>
+			<br>
+			<button type="submit" class="btn btn-info">Enviar</button>
+		</form>
+	</div>
+	<hr>
+	<div class="container">
+		<form>
+			<div class="form-group">
+				<label for="control1">Seleccione una opcion</label>
+				<select class="form-control" id="control1" name="control1">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+			<hr>
+			<div class="form-group">
+				<label for="control2">Seleccione una opcion</label>
+				<select multiple class="form-control" id="control2" name="control2">
+					<option>1</option>
+					<option>2</option>
+					<option>3</option>
+					<option>4</option>
+					<option>5</option>
+				</select>
+			</div>
+		</form>
+	</div>
+	<hr>
+	<div class="container">
+		<h1>Formulario de una linea</h1>
+		<form class="form-inline">
+			<label form="mail" class="ml-sm-3">Mail:</label>
+			<input type="email" class="form-control ml-sm-2" id="email">
+			<div class="form-check">
+				<label class="form-check-label"></label>Aceptar los terminos
+				<input type="checkbox" class="form-check-input mr-sm-2" name="">
+			</div>
+			<button type="submit" class="btn btn-primary">Enviar</button>
+			<button type="submit" class="btn btn-secondary">Enviar</button>
+			<button type="submit" class="btn btn-success">Enviar</button>
+			<button type="submit" class="btn btn-warning">Enviar</button>
+			<button type="submit" class="btn btn-danger">Enviar</button>
+			<button type="submit" class="btn btn-dark">Enviar</button>
+			<button type="submit" class="btn btn-light">Enviar</button>
+			<button type="submit" class="btn btn-link">Enviar</button>
+		</form>
+	</div>
+	<br>
+	<button type="submit" class="btn btn-primary btn-sm">Enviar</button>
+	<button type="submit" class="btn btn-secondary btn-sm">Enviar</button>
+	<button type="submit" class="btn btn-success btn-sm">Enviar</button>
+	<button type="submit" class="btn btn-warning btn-sm">Enviar</button>
+	<button type="submit" class="btn btn-danger btn-sm">Enviar</button>
+	<button type="submit" class="btn btn-dark btn-sm">Enviar</button>
+	<button type="submit" class="btn btn-light btn-sm">Enviar</button>
+	<button type="submit" class="btn btn-link btn-sm">Enviar</button>
+	<br>
+	<button type="submit" class="btn btn-primary btn-md">Enviar</button>
+	<button type="submit" class="btn btn-secondary btn-md">Enviar</button>
+	<button type="submit" class="btn btn-success btn-md">Enviar</button>
+	<button type="submit" class="btn btn-warning btn-lg">Enviar</button>
+	<button type="submit" class="btn btn-danger btn-lg">Enviar</button>
+	<button type="submit" class="btn btn-dark btn-lg">Enviar</button>
+	<button type="submit" class="btn btn-light btn-lg" disabled="disabled">Enviar</button>
+	<button type="submit" class="btn btn-link btn-lg">Enviar</button>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form5</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<form action="#">
+		Usuario:<input type="text" name="Usuario"><br>
+		Clave:<input type="password" name="Clave"><br>
+		Edad:<input type="text" name="Edad"><br>
+		<input type="submit" name="Enviar">
+	</form>
+	<hr>
+	<form action="#">
+		Usuario:<input type="text" name="Usuario"><br>
+		Clave:<input type="password" name="Clave" placeholder="minimo 8 caracteres"><br>
+		Edad:<input type="text" name="Edad"><br>
+		<input type="submit" name="Enviar">
+	</form>
+	<hr>
+	<form action="#">
+		Usuario:<input type="text" name="Usuario" required=""><br>
+		Clave:<input type="password" name="Clave" required=""><br>
+		Edad:<input type="text" name="Edad"><br>
+		<input type="submit" name="Enviar">
+	</form>
+	<hr>
+	<form action="#">
+		Usuario:<input type="text" name="Usuario" ><br>
+		Clave:<input type="password" name="Clave" ><br>
+		Email:<input type="Email" id="email1" name="Email" required=""><br>
+		<input type="submit" name="Enviar">
+	</form>
+	<hr>
+	<form action="#">
+		<p>Seleccione un color:
+		<input type="color" id="color1" name="color1" value="#EC1313"><br>
+		</p>
+		<input type="submit" name="Enviar">
+	</form>
+	<hr>
+	<form action="#">
+		<p>Ingrese un numero de 1 a 10:
+		<input type="number" id="valor" name="valor" min="1" max="10"><br>
+		</p>
+		<input type="submit" name="Enviar">
+	</form>
+	<hr>
+	<form action="#">
+		Ingrese el nombre del navegador que utiliza:
+		<input type="text" id="navegador" list="lnavegador">
+		<datalist id="lnavegador">
+			<option label="Chrome">Chrome</option>
+			<option label="Safari">Safari</option>
+			<option label="Edge">Edge</option>
+			<option label="Explorer">Explorer</option>
+		</datalist><input type="submit" value="Confirmar">
+	</form>
+	<hr>
+	<form action="#">
+		<p>Fecha inicial:
+		<input type="date" id="fecha1" name="fecha1"><br>
+		</p>
+		<p>Fecha final:
+		<input type="date" id="fecha2" name="fecha2"><br>
+		</p>
+		<input type="submit" name="Enviar">
+	</form>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		var nota1, nota2, nota3;
+		nota1=parseInt(prompt('Ingrese nota 1: ',''));
+		nota2=parseInt(prompt('Ingrese nota 2: ',''));
+		nota3=parseInt(prompt('Ingrese nota 3: ',''));
+		var pro=(nota1+nota2+nota3)/3;
+		document.write('nota 1: '+nota1+'<br> nota 2: '+nota2+'<br> nota 3: '+nota3+'<br> Promedio: '+pro+'<br>');
+
+		if(pro>=4){
+			document.write('Excelente');
+		}else{
+			if(pro>=3){
+				document.write('Bueno');
+			}else{
+				document.write('Reprobó');
+			}
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript</title>
+	<meta charset="utf-8">
+</head>
+<body>
+	<script type="text/javascript">
+		function pintar(color) {
+			document.getElementById('cuadrado1').style.backgroundColor=color;
+		}
+	</script>
+	<a href="#" onmouseover="pintar('#f00')" onmouseout="pintar('#000')">Rojo</a>
+	<a href="#" onmouseover="pintar('#0f0')" onmouseout="pintar('#000')">Verde</a>
+	<a href="#" onmouseover="pintar('#00f')" onmouseout="pintar('#000')">Azul</a>
+
+	<div id="cuadrado1" style="background:#000;width: 200px ;height: 200px"> </div>
+</body>
+</html>
